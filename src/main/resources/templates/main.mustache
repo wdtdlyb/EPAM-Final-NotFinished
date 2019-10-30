@@ -16,9 +16,9 @@
     </form>
 </div>
 <div>Список сообщений</div>
-    <form method="post" action="filter">
+<form method="post" action="filter">
     <input type="text" name="filter">
-        <input type="hidden" name="_csrf" value="{{_csrf.token}}" />
+    <input type="hidden" name="_csrf" value="{{_csrf.token}}" />
     <button type="submit">Найти</button>
 </form>
 {{#messages}}
@@ -26,6 +26,7 @@
         <b>{{id}}</b>
         <span>{{text}}</span>
         <i>{{tag}}</i>
+        <strong>{{authorName}}</strong>
     </div>
 {{/messages}}
 </body>
