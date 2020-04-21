@@ -29,7 +29,4 @@ public class UserController {
         model.addAttribute("roles", Role.values());
         return "userEdit";
     }
-
-
-
 }
